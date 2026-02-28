@@ -1,4 +1,4 @@
-# 🎧 Streaming Intelligence Platform  
+# Streaming Intelligence Platform  
 ## AI-Powered Customer Churn Prediction Dashboard
 
 A production-style machine learning web application designed to predict customer churn for subscription-based streaming platforms (e.g., Spotify, Netflix).
@@ -7,7 +7,7 @@ This system combines predictive analytics, business intelligence, and a professi
 
 ---
 
-## 🚀 Executive Summary
+## 1. Executive Summary
 
 Customer churn directly impacts recurring revenue in subscription businesses.  
 This project delivers an end-to-end churn prediction solution that:
@@ -22,7 +22,7 @@ The application demonstrates practical integration of Machine Learning + Web Dep
 
 ---
 
-## 🧠 Machine Learning Architecture
+## 2. Machine Learning Architecture
 
 ### Model Objective
 Binary Classification:
@@ -60,7 +60,7 @@ The model uses the following behavioral indicators:
 
 ---
 
-## 📊 Performance Metrics
+## 3. Performance Metrics
 
 - Logistic Regression: ~81% Accuracy  
 - Random Forest: ~87% ROC-AUC  
@@ -70,28 +70,28 @@ The ROC-AUC metric was prioritized due to probabilistic churn modeling requireme
 
 ---
 
-## 🖥 Application Features
+## 4. Application Features
 
-### 🎨 Enterprise-Style UI
+### Enterprise-Style UI
 - Dark analytics theme
 - Spotify-inspired design language
 - Clean sidebar input panel
 - Professional risk visualization card
 - Color-coded churn categories
 
-### 📈 Real-Time Prediction
+### Real-Time Prediction
 - Dynamic churn probability calculation
 - Risk score progress bar
 - High / Medium / Low classification
 - Business-friendly churn indicators
 
-### 📊 Analytics Overview
+### Analytics Overview
 - Total user count
 - Overall churn rate
 
 ---
 
-## 🛠 Technology Stack
+## 5. Technology Stack
 
 ### Backend & ML
 - Python
@@ -107,4 +107,45 @@ The ROC-AUC metric was prioritized due to probabilistic churn modeling requireme
 
 ---
 
-## 📂 Project Architecture
+## 6. Project Architecture
+
+```
+streaming-churn-platform/
+│
+├── data/
+│   ├── generate_data.py
+│   ├── streaming_churn.csv
+│
+├── train.py
+├── model.pkl
+├── scaler.pkl
+├── app.py
+├── requirements.txt
+└── README.md
+```
+
+## 7. Deployment Instructions
+
+### 1️. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 2️. Generate Dataset
+
+```bash
+python data/generate_data.py
+```
+
+### 3️. Train Model
+
+```bash
+python train.py
+```
+
+### 4️⃣ Launch Dashboard
+
+```bash
+python -m streamlit run app.py
+```
