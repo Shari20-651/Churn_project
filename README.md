@@ -144,7 +144,7 @@ python data/generate_data.py
 python train.py
 ```
 
-### 4️⃣ Launch Dashboard
+### 4️. Launch Dashboard
 
 ```bash
 python -m streamlit run app.py
